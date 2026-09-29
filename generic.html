@@ -1,0 +1,1078 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+<head>
+
+	<title>Deep Ball - Resume</title>
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<style>
+
+		.resume-card {
+			background: #ffffff;
+			box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+			margin-bottom: 40px;
+		}
+
+		.resume-top {
+			background: #0b4778;
+			padding: 40px;
+			color: #ffffff;
+		}
+
+		.resume-top-content {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+		}
+
+		.resume-photo {
+			width: 145px;
+			height: 145px;
+			object-fit: cover;
+			border-radius: 50%;
+			border: 6px solid #ffffff;
+		}
+
+		.resume-name {
+			color: #ffffff !important;
+			font-size: 42px !important;
+			margin: 0 0 5px 0 !important;
+			font-weight: 800;
+			letter-spacing: 1px;
+		}
+
+		.resume-role {
+			color: #dceeff !important;
+			font-size: 17px;
+			margin-bottom: 18px;
+			letter-spacing: 2px;
+		}
+
+		.resume-contact {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			font-size: 14px;
+		}
+
+		.resume-contact a {
+			color: #ffffff !important;
+			border-bottom: none !important;
+		}
+
+		.resume-social {
+			background: #06365c;
+			margin: 35px -40px -40px -40px;
+			padding: 18px 40px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+
+		.resume-social a {
+			color: #ffffff !important;
+			border-bottom: none !important;
+			font-size: 14px;
+		}
+
+		.resume-body {
+			display: grid;
+			grid-template-columns: 42% 58%;
+			padding: 40px;
+		}
+
+		.resume-left {
+			padding-right: 30px;
+			border-right: 1px solid #dddddd;
+		}
+
+		.resume-right {
+			padding-left: 30px;
+		}
+
+		.resume-section {
+			margin-bottom: 35px;
+		}
+
+		.resume-title {
+			color: #0875a8 !important;
+			font-size: 23px !important;
+			font-weight: 800 !important;
+			text-transform: uppercase;
+			margin-bottom: 20px !important;
+			border-bottom: 3px solid #0875a8;
+			display: inline-block;
+			padding-bottom: 5px;
+		}
+
+		.resume-item {
+			margin-bottom: 25px;
+		}
+
+		.resume-item h3 {
+			font-size: 16px !important;
+			margin-bottom: 5px !important;
+			font-weight: 700;
+		}
+
+		.resume-item h4 {
+			font-size: 14px !important;
+			font-weight: normal;
+			margin-bottom: 4px !important;
+		}
+
+		.resume-date {
+			font-size: 12px;
+			color: #777777;
+			font-style: italic;
+			margin-bottom: 8px;
+		}
+
+		.resume-item p {
+			font-size: 13px;
+			line-height: 1.6;
+		}
+
+		.resume-item ul {
+			margin-top: 8px;
+			margin-bottom: 0;
+		}
+
+		.resume-item li {
+			font-size: 13px;
+			line-height: 1.6;
+			margin-bottom: 5px;
+		}
+
+		.skill-row {
+			display: grid;
+			grid-template-columns: 125px 1fr;
+			align-items: center;
+			margin-bottom: 12px;
+		}
+
+		.skill-name {
+			font-size: 13px;
+		}
+
+		.skill-dots {
+			display: flex;
+			gap: 5px;
+		}
+
+		.skill-dot {
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: #222222;
+			display: inline-block;
+		}
+
+		.skill-dot.empty {
+			background: #d3d7db;
+		}
+
+		.project {
+			margin-bottom: 25px;
+		}
+
+		.project h3 {
+			font-size: 16px !important;
+			margin-bottom: 4px !important;
+		}
+
+		.project-tech {
+			color: #0875a8;
+			font-size: 12px;
+			font-weight: bold;
+			margin-bottom: 8px;
+		}
+
+		.project p {
+			font-size: 13px;
+			line-height: 1.6;
+		}
+
+		.summary-box {
+			background: #f5f7f9;
+			border-left: 4px solid #0875a8;
+			padding: 18px;
+			margin-bottom: 30px;
+		}
+
+		.summary-box p {
+			margin: 0;
+			font-size: 14px;
+			line-height: 1.7;
+		}
+
+		.resume-footer {
+			background: #06365c;
+			color: #ffffff;
+			text-align: center;
+			padding: 15px;
+			font-size: 12px;
+		}
+
+		.resume-footer p {
+			margin: 0;
+			color: #ffffff;
+		}
+
+		/* VIDEO */
+
+		.video-resume {
+			text-align: center;
+			margin: 30px 0 40px 0;
+		}
+
+		.video-resume h2 {
+			margin-bottom: 20px;
+		}
+
+		.video-resume iframe {
+			width: 80%;
+			max-width: 900px;
+			height: 400px;
+			border: none;
+		}
+
+		.video-link {
+			margin-top: 12px;
+		}
+
+		@media screen and (max-width: 900px) {
+
+			.resume-body {
+				grid-template-columns: 1fr;
+			}
+
+			.resume-left {
+				border-right: none;
+				border-bottom: 1px solid #dddddd;
+				padding-right: 0;
+				padding-bottom: 30px;
+			}
+
+			.resume-right {
+				padding-left: 0;
+				padding-top: 30px;
+			}
+
+			.video-resume iframe {
+				width: 100%;
+				height: 350px;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+
+			.resume-top {
+				padding: 25px;
+			}
+
+			.resume-top-content {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.resume-photo {
+				width: 120px;
+				height: 120px;
+			}
+
+			.resume-name {
+				font-size: 30px !important;
+			}
+
+			.resume-contact {
+				justify-content: center;
+			}
+
+			.resume-social {
+				margin: 25px -25px -25px -25px;
+				padding: 15px 25px;
+				justify-content: center;
+			}
+
+			.resume-body {
+				padding: 25px;
+			}
+
+			.skill-row {
+				grid-template-columns: 100px 1fr;
+			}
+
+			.video-resume iframe {
+				height: 250px;
+			}
+		}
+
+	</style>
+
+</head>
+
+
+<body class="is-preload">
+
+	<div id="wrapper">
+
+		<div id="main">
+
+			<div class="inner">
+
+				<header id="header">
+
+					<a href="index.html" class="logo">
+						<strong>Resume</strong>
+					</a>
+
+					<ul class="icons">
+
+						<li>
+							<a href="https://x.com/DeepBall1729"
+							   class="icon brands fa-twitter"
+							   target="_blank">
+								<span class="label">Twitter</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#"
+							   class="icon brands fa-facebook-f">
+								<span class="label">Facebook</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.linkedin.com/in/deep-ball-4a2787391"
+							   class="icon brands fa-linkedin"
+							   target="_blank">
+								<span class="label">LinkedIn</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#"
+							   class="icon brands fa-instagram">
+								<span class="label">Instagram</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="mailto:deepball614@gmail.com"
+							   class="icon solid fa-envelope">
+								<span class="label">Email</span>
+							</a>
+						</li>
+
+					</ul>
+
+				</header>
+
+
+				<!-- ==============================
+				     VIDEO RESUME
+				============================== -->
+
+				<div class="video-resume">
+
+					<h2>Video Resume</h2>
+
+					<iframe
+						src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+						title="Video Resume"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>
+					</iframe>
+
+					<p class="video-link">
+						<a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+						   target="_blank">
+							Watch on YouTube
+						</a>
+					</p>
+
+				</div>
+
+
+				<!-- ==============================
+				     RESUME CONTENT
+				============================== -->
+
+				<section>
+
+					<div class="resume-card">
+
+						<div class="resume-top">
+
+							<div class="resume-top-content">
+
+								<img
+									src="C:\Users\Asus\OneDrive\Desktop\My document\PHOTO.jpeg"
+									alt="Deep Ball"
+									class="resume-photo"
+								/>
+
+								<div>
+
+									<h1 class="resume-name">
+										DEEP BALL
+									</h1>
+
+									<div class="resume-role">
+										B.TECH CSE | 2nd Year Student | CTO
+									</div>
+
+									<div class="resume-contact">
+
+										<span>
+											<i class="icon solid fa-phone"></i>
+											+91-7739686150
+										</span>
+
+										<span>
+											<i class="icon solid fa-envelope"></i>
+											<a href="mailto:deepball614@gmail.com">
+												deepball614@gmail.com
+											</a>
+										</span>
+
+									</div>
+
+								</div>
+
+							</div>
+
+
+							<div class="resume-social">
+
+								<a
+									href="https://www.linkedin.com/in/deep-ball-4a2787391"
+									target="_blank">
+									<i class="icon brands fa-linkedin"></i>
+									LinkedIn
+								</a>
+
+								<a
+									href="https://github.com/"
+									target="_blank">
+									<i class="icon brands fa-github"></i>
+									GitHub
+								</a>
+
+								<a
+									href="https://x.com/DeepBall1729"
+									target="_blank">
+									<i class="icon brands fa-twitter"></i>
+									Twitter
+								</a>
+
+								<a href="mailto:deepball614@gmail.com">
+									<i class="icon solid fa-envelope"></i>
+									Email
+								</a>
+
+							</div>
+
+						</div>
+
+
+						<div class="resume-body">
+
+							<div class="resume-left">
+
+								<!-- EDUCATION -->
+
+								<div class="resume-section">
+
+									<h2 class="resume-title">
+										Education
+									</h2>
+
+									<div class="resume-item">
+
+										<h3>
+											Bachelor of Technology in
+											Computer Science and Engineering
+										</h3>
+
+										<h4>
+											Centurion University of Technology
+											and Management, Bhubaneswar
+										</h4>
+
+										<div class="resume-date">
+											2025 – 2029
+										</div>
+
+										<p>
+											<strong>
+												CGPA: 9.80 / 10
+											</strong>
+										</p>
+
+									</div>
+
+
+									<div class="resume-item">
+
+										<h3>
+											Diploma in Computer Application
+										</h3>
+
+										<h4>
+											Institute of Computer Studies,
+											Deoghar
+										</h4>
+
+										<div class="resume-date">
+											2020
+										</div>
+
+										<p>
+											<strong>
+												Grade: A
+											</strong>
+										</p>
+
+									</div>
+
+								</div>
+
+
+								<!-- CERTIFICATIONS -->
+
+								<div class="resume-section">
+
+									<h2 class="resume-title">
+										Certifications
+									</h2>
+
+									<div class="resume-item">
+										<h3>DSA in JAVA</h3>
+										<h4>Apna College</h4>
+									</div>
+
+									<div class="resume-item">
+										<h3>Hackathon</h3>
+										<h4>Centurion University</h4>
+									</div>
+
+									<div class="resume-item">
+										<h3>Diploma in Computer Application</h3>
+										<h4>ICS Dhanbad</h4>
+									</div>
+
+								</div>
+
+
+								<!-- SKILLS -->
+
+								<div class="resume-section">
+
+									<h2 class="resume-title">
+										Skills
+									</h2>
+
+									<div class="skill-row">
+										<span class="skill-name">Java</span>
+										<div class="skill-dots">
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot empty"></span>
+										</div>
+									</div>
+
+									<div class="skill-row">
+										<span class="skill-name">C</span>
+										<div class="skill-dots">
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot empty"></span>
+										</div>
+									</div>
+
+									<div class="skill-row">
+										<span class="skill-name">HTML</span>
+										<div class="skill-dots">
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot empty"></span>
+										</div>
+									</div>
+
+									<div class="skill-row">
+										<span class="skill-name">SQL</span>
+										<div class="skill-dots">
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot empty"></span>
+										</div>
+									</div>
+
+									<div class="skill-row">
+										<span class="skill-name">React Native</span>
+										<div class="skill-dots">
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot empty"></span>
+										</div>
+									</div>
+
+									<div class="skill-row">
+										<span class="skill-name">Node.js</span>
+										<div class="skill-dots">
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot empty"></span>
+										</div>
+									</div>
+
+									<div class="skill-row">
+										<span class="skill-name">Git / GitHub</span>
+										<div class="skill-dots">
+											<span class="skill-dot"></span>
+											<span class="skill-dot"></span>
+											<span class="skill-dot empty"></span>
+											<span class="skill-dot empty"></span>
+											<span class="skill-dot empty"></span>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+
+							<div class="resume-right">
+
+								<!-- SUMMARY -->
+
+								<div class="resume-section">
+
+									<h2 class="resume-title">
+										Summary
+									</h2>
+
+									<div class="summary-box">
+
+										<p>
+											First-year B.Tech AI & ML student,
+											CTO at Masun Technologies, and
+											Java developer passionate about
+											building scalable software solutions.
+											Experienced in Data Structures &
+											Algorithms, with a strong foundation
+											in problem-solving and backend
+											development.
+										</p>
+
+									</div>
+
+								</div>
+
+
+								<!-- EXPERIENCE -->
+
+								<div class="resume-section">
+
+									<h2 class="resume-title">
+										Experience
+									</h2>
+
+									<div class="resume-item">
+
+										<h3>
+											Chief Technology Officer
+										</h3>
+
+										<h4>
+											Masun Technologies
+										</h4>
+
+										<div class="resume-date">
+											Feb 2026 – Present | On-site
+										</div>
+
+										<ul>
+
+											<li>
+												Led end-to-end technical
+												development of AI-powered
+												mobile applications including
+												Label Truth and Kisan Sathi.
+											</li>
+
+											<li>
+												Collaborated with the founding
+												team to build and launch
+												Android APKs using React Native
+												Expo and EAS Build.
+											</li>
+
+										</ul>
+
+									</div>
+
+
+									<div class="resume-item">
+
+										<h3>
+											High School Mathematics Teacher
+										</h3>
+
+										<h4>
+											S.R. Academy, Jharkhand
+										</h4>
+
+										<div class="resume-date">
+											Apr 2024 – Dec 2024 | On-site
+										</div>
+
+										<ul>
+
+											<li>
+												Taught Mathematics to high
+												school students, simplifying
+												complex concepts through
+												structured lesson plans.
+											</li>
+
+											<li>
+												Managed a classroom of 30+
+												students while maintaining
+												discipline and an engaging
+												learning environment.
+											</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+
+								<!-- PROJECTS -->
+
+								<div class="resume-section">
+
+									<h2 class="resume-title">
+										Projects
+									</h2>
+
+									<div class="project">
+
+										<h3>
+											Periodic Table Explorer
+										</h3>
+
+										<div class="project-tech">
+											C · Structs · Arrays · Loops · Functions
+										</div>
+
+										<p>
+											Built a console-based application
+											in C to browse and display
+											information of all 118 chemical
+											elements including atomic number,
+											symbol, atomic mass, and element
+											category.
+										</p>
+
+										<ul>
+
+											<li>
+												Implemented data storage using
+												structs and arrays.
+											</li>
+
+											<li>
+												Added search and filter
+												functionality using modular
+												functions.
+											</li>
+
+											<li>
+												Independently designed and
+												developed the entire project.
+											</li>
+
+										</ul>
+
+									</div>
+
+
+									<div class="project">
+
+										<h3>
+											To-Do List Manager
+										</h3>
+
+										<div class="project-tech">
+											Java · Arrays · OOP · Scanner
+										</div>
+
+										<p>
+											Built a console-based To-Do List
+											Manager in Java with a fully
+											interactive menu-driven interface.
+										</p>
+
+										<ul>
+
+											<li>
+												Add, view, delete, search,
+												count, and clear tasks.
+											</li>
+
+											<li>
+												Used arrays and modular
+												methods.
+											</li>
+
+											<li>
+												Handled invalid entries,
+												full task lists, and empty
+												list scenarios.
+											</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+
+								<!-- TECHNICAL SKILLS -->
+
+								<div class="resume-section">
+
+									<h2 class="resume-title">
+										Technical Skills
+									</h2>
+
+									<div class="resume-item">
+
+										<h3>
+											Programming Languages
+										</h3>
+
+										<p>
+											HTML, Java, C, SQL
+										</p>
+
+									</div>
+
+									<div class="resume-item">
+
+										<h3>
+											Web Technologies / Frameworks
+										</h3>
+
+										<p>
+											React Native, Node.js, Express
+										</p>
+
+									</div>
+
+									<div class="resume-item">
+
+										<h3>
+											Developer Tools / Platforms
+										</h3>
+
+										<p>
+											Git, VS Code, Supabase, GitHub
+										</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+						<!-- DOWNLOAD RESUME -->
+
+						<div style="text-align: center; margin: 30px 0;">
+
+							<a href="Resume.pdf"
+							   download
+							   class="button primary">
+
+								<i class="icon solid fa-download"></i>
+								Download Resume
+
+							</a>
+
+						</div>
+
+
+						<!-- FOOTER -->
+
+						<div class="resume-footer">
+
+							<p>
+								&copy; 2026 Deep Ball.
+								All Rights Reserved.
+							</p>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+
+		</div>
+
+
+		<!-- SIDEBAR -->
+
+		<div id="sidebar">
+
+			<div class="inner">
+
+				<section id="search" class="alt">
+
+					<form method="post" action="#">
+
+						<input
+							type="text"
+							name="query"
+							id="query"
+							placeholder="Search" />
+
+					</form>
+
+				</section>
+
+
+				<nav id="menu">
+
+					<header class="major">
+
+						<h2>Menu</h2>
+
+					</header>
+
+					<ul>
+
+						<li>
+							<a href="index.html">
+								Homepage
+							</a>
+						</li>
+
+						<li>
+							<a href="generic.html">
+								My Resume
+							</a>
+						</li>
+
+						<li>
+							<a href="elements.html">
+								Projects
+							</a>
+						</li>
+
+					</ul>
+
+				</nav>
+
+
+				<section>
+
+					<header class="major">
+
+						<h2>Get in touch</h2>
+
+					</header>
+
+					<p>
+						I am always open to discussing new projects,
+						ideas, collaborations, and opportunities.
+						Feel free to reach out if you’d like to
+						connect or work together.
+					</p>
+
+					<ul class="contact">
+
+						<li class="icon solid fa-envelope">
+
+							<a href="mailto:deepball614@gmail.com">
+								deepball614@gmail.com
+							</a>
+
+						</li>
+
+						<li class="icon solid fa-phone">
+							7739686150
+						</li>
+
+						<li class="icon solid fa-home">
+
+							752050, Centurion University #
+							Bhubaneswar<br />
+
+							Jatani
+
+						</li>
+
+					</ul>
+
+				</section>
+
+
+				<footer id="footer">
+
+					<p class="copyright">
+						&copy; 2026 Deep Ball.
+						All rights reserved.
+						Created by Deep Ball.
+					</p>
+
+				</footer>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
